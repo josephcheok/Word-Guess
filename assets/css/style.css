@@ -1,0 +1,129 @@
+#introPage,
+#introText,
+#introText p,
+#gamePage,
+#wordWrap,
+#wordWrap div {
+  -webkit-box-sizing: border-box;
+  -moz-boz-sizing: border-box;
+  box-sizing: border-box;
+}
+#introPage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  height: 650px;
+  width: 850px;
+}
+#introText {
+  width: 850px;
+  height: 260px;
+  margin: 10px auto;
+}
+#introText p {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+#gamePage {
+  display: none;
+  text-align: center;
+  min-width: 365px;
+}
+
+#wordWrap {
+  display: inline-block;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8,
+#letter9,
+#letter10,
+#letter11,
+#letter12,
+#letter13,
+#letter14,
+#letter15,
+#letter16,
+#letter17,
+#letter18,
+#letter19,
+#letter20,
+#letter21,
+#letter22,
+#letter23,
+#letter24,
+#letter25,
+#letter26,
+#letter27,
+#letter28,
+#letter29,
+#letter30 {
+  width: 28px;
+  height: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+}
+#underline1,
+#underline2,
+#underline3,
+#underline4,
+#underline5,
+#underline6,
+#underline7,
+#underline8,
+#underline9,
+#underline10,
+#underline11,
+#underline12,
+#underline13,
+#underline14,
+#underline15,
+#underline16,
+#underline17,
+#underline18,
+#underline19,
+#underline20,
+#underline21,
+#underline22,
+#underline23,
+#underline24,
+#underline25,
+#underline26,
+#underline27,
+#underline28,
+#underline29,
+#underline30 {
+  float: left;
+  width: 28px;
+  height: 45px;
+  margin-right: 3px;
+}
+#again {
+  display: none;
+  width: 50%;
+  height: 65px;
+  margin: 0px auto 20px auto;
+  font-size: 35px;
+  line-height: 65px;
+  text-align: center;
+  color: white;
+  background-color: #00006c;
+  border-radius: 25px;
+  cursor: pointer;
+}
