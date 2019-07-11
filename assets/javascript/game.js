@@ -166,6 +166,7 @@ document.onkeyup = function(event) {
     if (numWrong == 7) {
       results.innerHTML = "You lose!<br>Keep guessing until you get it right.";
       document.getElementById("again").style.display = "block";
+      document.getElementById("introPage").style.display = "none";
       results.style.lineHeight = "20px";
     }
     if (numRight == phraseLength) {
@@ -184,10 +185,12 @@ document.onkeyup = function(event) {
 function win() {
   var again = document.getElementById("again");
   var results = document.getElementById("results");
+  var intro = document.getElementById("introPage");
   results.style.visibility = "visible";
   results.style.color = "#00b100";
   if (numWrong > 6) {
     results.innerHTML = "Got there in the end. Better luck next time...kiddo.";
+    intro.style.display = "none";
     again.style.display = "block";
     results.style.lineHeight = "40px";
     results.style.fontSize = "20px";
@@ -197,14 +200,15 @@ function win() {
     again.style.marginTop = "40px";
     results.style.marginTop = "15px";
     results.style.fontSize = "75px";
+    intro.style.display = "none";
   }
-  reset();
 }
 
 function reset() {
   var ul1 = document.getElementById("underline1").offsetWidth;
   var results = document.getElementById("results");
   var again = document.getElementById("again");
+  var intro = document.getElementById("introPage");
   for (a = 1; a < 31; a++) {
     document.getElementById("letter" + a).innerHTML = "&nbsp;";
     document.getElementById("underline" + a).style.width = ul1 + "px";
@@ -220,11 +224,14 @@ function reset() {
   wrongletters = [];
   guessedletters = [];
   guessesleft = 7;
+  document.getElementById("guesses").textContent = wrongletters;
+  document.getElementById("guessesleft").textContent = guessesleft;
   results.style.marginTop = "5px";
   results.style.lineHeight = "40px";
   results.innerHTML = " ";
   again.style.marginTop = "0px";
   again.style.display = "none";
+  intro.style.display = "block";
   if (phrases.indexOf(word) > -1) {
     phrases.splice(rand, 1);
     phrase();

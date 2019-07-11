@@ -16,7 +16,7 @@
   left: 0;
   margin: auto;
   display: block;
-  height: 650px;
+  height: 600px;
   width: 850px;
 }
 #introText {
@@ -126,4 +126,5 @@
   background-color: #00006c;
   border-radius: 25px;
   cursor: pointer;
+  z-index: 99;
 }
