@@ -137,9 +137,9 @@ document.onkeyup = function(event) {
   var userletterCap = userletter.toUpperCase();
   var results = document.getElementById("results");
   if (validletters.indexOf(userletter) < 0) {
-    alert("This is not a valid letter. Please try again.");
+    // alert("This is not a valid letter. Please try again.");
   } else if (guessedletters.indexOf(userletter) > -1) {
-    alert("You've already pressed that letter!");
+    // alert("You've already pressed that letter!");
   } else {
     for (a = 1; a < 31; a++) {
       if (
